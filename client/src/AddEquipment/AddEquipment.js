@@ -21,6 +21,7 @@ import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 
 const AddEquipment = ({ refreshData, refreshToggle }) => {
   const [open, setOpen] = useState(false);
+  
 
   const validationSchema = yup.object().shape({
     equipmentName: yup.string().required("Enter valid value."),
